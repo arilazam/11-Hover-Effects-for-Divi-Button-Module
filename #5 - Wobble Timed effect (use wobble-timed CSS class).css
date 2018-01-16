@@ -1,0 +1,25 @@
+.wobble-timed:hover, .wobble-timed:focus, .wobble-timed:active {    
+    animation: wobble-timed 0.2s 3 linear; /* loops 3 times, but you are free to change it to whatever you like */
+    -webkit-animation: wobble-timed 0.2s 3 linear;    
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);   
+}
+
+@keyframes wobble-timed {
+  50% {
+        transform: translateX(3px) rotate(2deg);
+  }
+
+  100% {
+        transform: translateX(-3px) rotate(-2deg);
+  }
+}
+
+@-webkit-keyframes wobble-timed {
+  50% {
+        -webkit-transform: translateX(3px) rotate(2deg);
+  }
+
+  100% {
+        -webkit-transform: translateX(-3px) rotate(-2deg);
+  }
+}

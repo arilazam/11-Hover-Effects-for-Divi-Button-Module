@@ -1,0 +1,11 @@
+/* Float Down effect (adds shadow) */
+.float-down-alt {
+    transition: all 0.25s;
+    -webkit-transition: all 0.25s;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0); /* Firefox fix for pixelated edges during transform effects*/
+}
+.float-down-alt:hover, .float-down-alt:focus, .float-down-alt:active {
+    transform: translateY(6px);
+    -webkit-transform: translateY(6px);
+    box-shadow: 0px -4px 4px  #606060;
+}

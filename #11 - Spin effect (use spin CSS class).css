@@ -1,0 +1,10 @@
+/* Spin effect */
+.spin{
+    transition: transform 0.4s;
+    -webkit-transition: transform 0.4s;  
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0); /* Firefox fix for pixelated edges during transform effects*/
+}
+.spin:hover, .spin:focus, .spin:active{
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+}

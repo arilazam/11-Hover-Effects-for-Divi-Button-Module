@@ -1,0 +1,9 @@
+/* Shrink effect */
+.shrink {
+    transition: transform 0.4s;
+    -webkit-transition: -webkit-transform 0.4s;
+}
+.shrink:hover, .shrink:focus, .shrink:active {
+    transform: scale(0.85);
+    -webkit-transform: scale(0.85); 
+}

@@ -1,0 +1,10 @@
+/* Float Up effect */
+.float-up {   
+    transition-duration: transform 0.25s;
+    -webkit-transition-duration: transform 0.25s;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0); /* Firefox fix for pixelated edges during transform effects*/
+}
+.float-up:hover, .float-up:focus, .float-up:active {
+    transform: translateY(-6px);
+    -webkit-transform: translateY(-6px);
+}
